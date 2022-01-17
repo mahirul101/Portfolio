@@ -1,0 +1,336 @@
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    background: white ;
+    font-family: 'Luxurious Roman', cursive;
+}
+
+/* Nav style */
+.max-width{
+    max-width:1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+#mainNavbar{
+    /* background-color: #af804f ; */
+    font-size: 1.5rem;
+    font-weight: 100; 
+    padding: 100px 80px 100px 80px;
+}
+
+#mainNavbar #navLinks{
+    padding-left:150px;
+}
+
+#mainNavbar .navbar-brand{
+    font-size: 1.5rem;
+    font-weight: 100; 
+    color: #E2BAB1;
+}
+
+#mainNavbar .navbar-nav .nav-item .nav-link{
+    font-size: 1.5rem;
+    font-weight: 400; 
+    color: #E2BAB1;
+    transition: color 0.3s ease;
+}
+#mainNavbar .navbar-nav .nav-item .nav-link:hover{ 
+    color: black;
+}
+.navbar.scrolled {
+    background: #7E7D7F;
+    transition: background 500ms;
+}
+
+
+/* Home style */
+.home{
+    display:flex;
+    background:url("https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-size: 100% 100%;
+    height: 100vh;
+    color:#fff;
+    min-height:500px;
+    color: black;
+}
+
+.home .max-width{
+    margin: auto 0 auto 0;
+}
+
+.home .home-content .text-1{
+    font-size: 30px;
+    font-weight: 400;
+    margin:5px 0;
+}
+.home .home-content .text-2{
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: -3px
+}
+
+#home-section a{
+background-color:#E2BAB1;
+color: white;
+}
+
+/* About style */
+
+
+#about-section h1{
+
+        width: 100%;
+        margin-top: 25px;
+        padding: 0;
+        text-align: center;
+}
+#about-section h1:after {
+        display: inline-block;
+        margin: 0 0 8px 20px;
+        height: 3px;
+        content: " ";
+        text-shadow: none;
+        background-color: #E2BAB1;
+        width: 140px;
+}
+#about-section h1:before {
+        display: inline-block;
+        margin: 0 20px 8px 0;
+        height: 3px;
+        content: " ";
+        text-shadow: none;
+        background-color: #E2BAB1;
+        width: 140px;
+}
+
+#about-section img{
+    height: 400px;
+}
+
+#about-section .about-paragraph{
+    font-size: 1.15rem;
+    margin-right: 25px;
+}
+
+#about-section .selfie{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    height: 50%;
+
+}
+
+#about-section h4 span{
+    position: relative;
+    -webkit-text-stroke: 0.3vw white;
+    text-transform: uppercase;
+}
+
+#about-section h4 span::before{
+    content: attr(data-text);
+    position:absolute;
+    top: 0;
+    left:0;
+    width:0;
+    height: 100%;
+    color: #E2BAB1;
+    -webkit-text-stroke: 0vw white;
+    border-right: 2px solid #E2BAB1;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+
+@keyframes animate{
+    0%,10%,100%{
+        width:0;
+    }
+    70%,90%{
+        width:100%;
+    }
+}
+
+/* Skill style */
+#SkillsGroup p{
+    font-size: 0.8 rem;
+    font-weight: 80;
+}
+
+#skill-section {
+    background-color:	#E0E0E0;
+}
+
+#skill-section .experience{
+    padding-bottom: 15px;
+}
+
+
+#skill-section h1{
+
+    width: 100%;
+    margin-top: 25px;
+    padding: 0;
+    text-align: center;
+}
+#skill-section h1:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #E2BAB1;
+    width: 140px;
+}
+#skill-section h1:before {
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #E2BAB1;
+    width: 140px;
+}
+
+#skill-section span .important{
+    font-weight: bolder;
+}
+
+/* #skill-section h3 {
+    position: relative;
+    -webkit-text-stroke: 0.3vw #E0E0E0;
+    text-transform: uppercase;
+}
+
+#about-section h3::before{
+    content: attr(data-text);
+    position:absolute;
+    top: 0;
+    left:0;
+    width:0;
+    height: 100%;
+    color: black;
+    -webkit-text-stroke: 0vw #E0E0E0;
+    border-right: 2px solid black;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+
+@keyframes animate{
+    0%,10%,100%{
+        width:0;
+    }
+    70%,90%{
+        width:100%;
+    }
+} */
+
+/* Project style */
+#project-section h1{
+
+    width: 100%;
+    margin-top: 25px;
+    padding: 0;
+    text-align: center;
+}
+#project-section h1:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #E2BAB1;
+    width: 140px;
+}
+#project-section h1:before {
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #E2BAB1;
+    width: 140px;
+}
+
+#project-section .card{
+    background-color:#E0E0E0;
+    max-width: 700px;
+    max-height:800px;
+    border-radius: 15px;
+}
+
+#project-section .card-image{
+    height: 360px;
+    width: 100%;
+    background: none;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+#project-section .card-1{
+    background: url("file:///Users/my-mac/Downloads/PingPong.gif") no-repeat center;
+    margin: auto;
+    padding: auto; 
+}
+
+#project-section .dots{
+    padding: 25% 0;
+    text-align:center;
+    font-size: 40px;
+}
+
+
+#project-section a{
+    background-color:#E2BAB1;
+    color: white; 
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    padding:auto;
+}
+
+/* Contact style */
+#contact-section{
+    background-color: #E0E0E0
+}
+
+#contact-section .icons{
+    padding-left: 150px;
+}
+
+
+#contact-section h1{
+
+    width: 100%;
+    margin-top: 25px;
+    padding: 0;
+    text-align: center;
+}
+#contact-section h1:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #E2BAB1;
+    width: 140px;
+}
+#contact-section h1:before {
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #E2BAB1;
+    width: 140px;
+}
+
+#contact-section .icons a{
+    color: black;
+    text-decoration: none;
+}
+
