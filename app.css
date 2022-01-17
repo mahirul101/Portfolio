@@ -272,7 +272,7 @@ color: white;
 }
 
 #project-section .card-1{
-    background: url("PingPong.gif") no-repeat center;
+    background: url("file:///Users/my-mac/Downloads/PingPong.gif") no-repeat center;
     margin: auto;
     padding: auto; 
 }
@@ -332,5 +332,37 @@ color: white;
 #contact-section .icons a{
     color: black;
     text-decoration: none;
+}
+
+/* adjust size */
+@media (max-width: 415px){
+    h1{
+        font-size: 1em;
+        
+    }
+    #about-section h4{
+        content: none;
+        color: transparent;
+    }
+    #about-section h4 span{
+        content: none;
+    }
+    
+    #about-section h4 span::before{
+        content: none;
+    }
+    .contact-title{
+        content:"Contact me";
+
+    }
+    #contact-section .icons{
+        display:flex;
+        align-items: center;
+    }
+    .navbar.scrolled {
+        background:none;
+    }
+    
+
 }
 
