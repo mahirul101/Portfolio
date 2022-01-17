@@ -272,7 +272,7 @@ color: white;
 }
 
 #project-section .card-1{
-    background: url("file:///Users/my-mac/Downloads/PingPong.gif") no-repeat center;
+    background: url("PingPong.gif") no-repeat center;
     margin: auto;
     padding: auto; 
 }
