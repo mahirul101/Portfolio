@@ -171,7 +171,7 @@ color: white;
 
 /* Project style */
 #project-section{
-    background-color: white;
+    background-color: #E0E0E0;
 }
 #project-section h1{
 
@@ -219,7 +219,7 @@ color: white;
 
 /* Contact style */
 #contact-section{
-    background-color: #E2E2E2;
+    background-color: white;
 }
 
 #contact-section .icons{
