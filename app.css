@@ -89,6 +89,9 @@ color: white;
 }
 
 /* About style */
+#about-section{
+    background-color: #E0E0E0;
+}
 #about-section h1{
 
         width: 100%;
@@ -118,6 +121,9 @@ color: white;
 
 
 /* Skill style */
+#skill-section{
+    background-color: white;
+}
 #SkillsGroup p{
     font-size: 0.8 rem;
     font-weight: 80;
@@ -164,6 +170,9 @@ color: white;
 
 
 /* Project style */
+#project-section{
+    background-color: white;
+}
 #project-section h1{
 
     width: 100%;
@@ -210,7 +219,7 @@ color: white;
 
 /* Contact style */
 #contact-section{
-    background-color: white;
+    background-color: #E2E2E2;
 }
 
 #contact-section .icons{
