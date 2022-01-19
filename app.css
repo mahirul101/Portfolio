@@ -194,12 +194,13 @@ color: white;
 }
 
 #project-section .card{
-    background-color:#E0E0E0;
+    background-color:white;
     border-radius: 15px;
 }
 
 #project-section img{
     border-radius: 15px;
+    border: 20x solid black;
 }
 
 
