@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
   }
 body {
-    background: white ;
+    background: #E0E0E0 ;
     font-family: 'Luxurious Roman', cursive;
 }
 
@@ -63,12 +63,25 @@ body {
     font-size: 30px;
     font-weight: 400;
     margin:5px 0;
+    opacity: 0;
+    margin: 0;
+    animation: animate 0.75s ease-out 1s forwards;
 }
 .home .home-content .text-2{
     font-size: 60px;
     font-weight: 600;
-    margin-left: -3px
+    margin-left: -3px;
+    opacity: 0;
+    margin: 0;
+    animation: animate 0.75s ease-out 2s forwards;
 }
+
+@keyframes animate{
+    100%{
+        opacity: 1;
+    }   
+}
+
 
 #home-section a{
 background-color:#E2BAB1;
@@ -76,8 +89,6 @@ color: white;
 }
 
 /* About style */
-
-
 #about-section h1{
 
         width: 100%;
@@ -108,51 +119,6 @@ color: white;
     height: 400px;
 }
 
-#about-section .about-paragraph{
-    font-size: 1.15rem;
-    margin-right: 25px;
-}
-
-#about-section .selfie{
-    display: block;
-    margin-left:auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 50%;
-    height: 50%;
-
-}
-
-#about-section h4 span{
-    position: relative;
-    -webkit-text-stroke: 0.3vw white;
-    text-transform: uppercase;
-}
-
-#about-section h4 span::before{
-    content: attr(data-text);
-    position:absolute;
-    top: 0;
-    left:0;
-    width:0;
-    height: 100%;
-    color: #E2BAB1;
-    -webkit-text-stroke: 0vw white;
-    border-right: 2px solid #E2BAB1;
-    overflow: hidden;
-    animation: animate 6s linear infinite;
-}
-
-
-@keyframes animate{
-    0%,10%,100%{
-        width:0;
-    }
-    70%,90%{
-        width:100%;
-    }
-}
 
 /* Skill style */
 #SkillsGroup p{
@@ -161,7 +127,7 @@ color: white;
 }
 
 #skill-section {
-    background-color:	#E0E0E0;
+    background-color:	white;
 }
 
 #skill-section .experience{
@@ -199,35 +165,6 @@ color: white;
     font-weight: bolder;
 }
 
-/* #skill-section h3 {
-    position: relative;
-    -webkit-text-stroke: 0.3vw #E0E0E0;
-    text-transform: uppercase;
-}
-
-#about-section h3::before{
-    content: attr(data-text);
-    position:absolute;
-    top: 0;
-    left:0;
-    width:0;
-    height: 100%;
-    color: black;
-    -webkit-text-stroke: 0vw #E0E0E0;
-    border-right: 2px solid black;
-    overflow: hidden;
-    animation: animate 6s linear infinite;
-}
-
-
-@keyframes animate{
-    0%,10%,100%{
-        width:0;
-    }
-    70%,90%{
-        width:100%;
-    }
-} */
 
 /* Project style */
 #project-section h1{
@@ -258,44 +195,24 @@ color: white;
 
 #project-section .card{
     background-color:#E0E0E0;
-    max-width: 700px;
-    max-height:800px;
     border-radius: 15px;
 }
 
-#project-section .card-image{
-    height: 360px;
-    width: 100%;
-    background: none;
-    margin-bottom: 15px;
-    background-size: cover;
-}
-
-#project-section .card-1{
-    background: url("PingPong.gif") no-repeat center;
-    margin: auto;
-    padding: auto; 
-}
-
-#project-section .dots{
-    padding: 25% 0;
-    text-align:center;
-    font-size: 40px;
+#project-section img{
+    border-radius: 15px;
 }
 
 
 #project-section a{
     background-color:#E2BAB1;
     color: white; 
-    margin-left:auto;
-    margin-right: auto;
-    margin-bottom: 15px;
+    text-align: center;
     padding:auto;
 }
 
 /* Contact style */
 #contact-section{
-    background-color: #E0E0E0
+    background-color: white;
 }
 
 #contact-section .icons{
@@ -335,34 +252,30 @@ color: white;
 }
 
 /* adjust size */
-@media (max-width: 415px){
-    h1{
-        font-size: 1em;
-        
-    }
-    #about-section h4{
-        content: none;
-        color: transparent;
-    }
-    #about-section h4 span{
-        content: none;
-    }
-    
-    #about-section h4 span::before{
-        content: none;
-    }
-    .contact-title{
-        content:"Contact me";
 
+
+@media(max-width: 1303px){
+    #project-section h1::after, #project-section h1::before{
+        width: 0px;
+    }
+    #skill-section h1::after, #skill-section h1::before{
+        width: 0px;
+    }
+    #about-section h1::after, #about-section h1::before{
+        width: 0px;
+    }
+    #contact-section h1::after, #contact-section h1::before{
+        width: 0px;
+    }
+    h1{
+        text-decoration: underline #E2BAB1;
     }
     #contact-section .icons{
-        display:flex;
-        align-items: center;
+        align-items: none;
     }
-    .navbar.scrolled {
-        background:none;
-    }
-    
-
 }
-
+@media(max-width: 509px){
+    section{
+        width: 100%;
+    }
+}
