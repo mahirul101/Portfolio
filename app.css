@@ -118,7 +118,9 @@ color: white;
         width: 140px;
 }
 
-
+#about-section img{
+    height: 400px;
+}
 
 /* Skill style */
 #skill-section{
