@@ -255,7 +255,7 @@ color: white;
 /* adjust size */
 
 
-@media(max-width: 1303px){
+@media(max-width: 613px){
     #project-section h1::after, #project-section h1::before{
         width: 0px;
     }
